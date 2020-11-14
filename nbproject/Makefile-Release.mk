@@ -39,6 +39,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Mayor\ de\ 4\ numeros.o \
 	${OBJECTDIR}/Tablas\ de\ multiplicar.o \
 	${OBJECTDIR}/fibonacci.o \
+	${OBJECTDIR}/for.o \
 	${OBJECTDIR}/if.o \
 	${OBJECTDIR}/main.o
 
@@ -89,6 +90,11 @@ ${OBJECTDIR}/fibonacci.o: fibonacci.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/fibonacci.o fibonacci.c
+
+${OBJECTDIR}/for.o: for.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/for.o for.c
 
 ${OBJECTDIR}/if.o: if.c
 	${MKDIR} -p ${OBJECTDIR}
