@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/for.o
+	${OBJECTDIR}/arreglo\ min\ y\ max.o
 
 
 # C Compiler Flags
@@ -62,10 +62,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_1cm2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_1cm2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/for.o: for.c
+.NO_PARALLEL:${OBJECTDIR}/arreglo\ min\ y\ max.o
+${OBJECTDIR}/arreglo\ min\ y\ max.o: arreglo\ min\ y\ max.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/for.o for.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglo\ min\ y\ max.o arreglo\ min\ y\ max.c
 
 # Subprojects
 .build-subprojects:
