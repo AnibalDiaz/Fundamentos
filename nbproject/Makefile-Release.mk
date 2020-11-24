@@ -45,7 +45,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/for.o \
 	${OBJECTDIR}/if.o \
 	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/mayor\ de\ 3\ numeros.o
+	${OBJECTDIR}/mayor\ de\ 3\ numeros.o \
+	${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o \
+	${OBJECTDIR}/ordenamiento\ burbuja.o
 
 
 # C Compiler Flags
@@ -133,6 +135,18 @@ ${OBJECTDIR}/mayor\ de\ 3\ numeros.o: mayor\ de\ 3\ numeros.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/mayor\ de\ 3\ numeros.o mayor\ de\ 3\ numeros.c
+
+.NO_PARALLEL:${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o
+${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o: ordenamiento\ burbuja\ mejorado.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o ordenamiento\ burbuja\ mejorado.c
+
+.NO_PARALLEL:${OBJECTDIR}/ordenamiento\ burbuja.o
+${OBJECTDIR}/ordenamiento\ burbuja.o: ordenamiento\ burbuja.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ordenamiento\ burbuja.o ordenamiento\ burbuja.c
 
 # Subprojects
 .build-subprojects:

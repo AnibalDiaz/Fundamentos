@@ -3,7 +3,7 @@
 
 int main(int argc, char** argv) {
     
-    int n=0,mayor=0,x=0,menor;
+   int n=0,mayor=0,x=0,menor;
     int arreglo[x];
      
     printf("Cuantos valores son: ");
@@ -13,9 +13,7 @@ int main(int argc, char** argv) {
         printf("Valor %d: ",x+1);
         scanf("%d",&arreglo[x]); 
         
-        if(arreglo[x]<menor){
-            menor=arreglo[x];
-        }
+        
         
         if(arreglo[x]>mayor){
             mayor=arreglo[x];
@@ -23,10 +21,16 @@ int main(int argc, char** argv) {
         
         
     }
+    menor=mayor;
+    for(x=0;x<n;x++){
+        if(arreglo[x]<menor){
+            menor=arreglo[x];
+        }
+    }
     
     printf("El valor menor es %d\n",menor);
     printf("El valor mayor es %d",mayor);
-
+    
     return (EXIT_SUCCESS);
 }
 
