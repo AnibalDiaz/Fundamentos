@@ -4,13 +4,13 @@
 int main(int argc, char** argv) {
     int num[]={3,1,5};
     int i=0,j=0,x=0;
-    bool bandera=false;
+    int orden=1;
     
-    for(i;i<3 && bandera=false;i++){
-        bandera=true;
+    for(i;i<3 && orden==1;i++){
+        orden=0;
         for(j;j<3;j++){
             if(num[j]>num[j+1]){
-                bandera=false;
+                orden=1;
                 x=num[j];
                 num[j]=num[j+1];
                 num[j+1]=x;
