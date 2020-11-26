@@ -10,11 +10,11 @@ int main(int argc, char** argv) {
     scanf("%d",&n);
     
     for(x;x<n;x++){
-        printf("Dame la calificacion %d:",x+1);
+        printf("Ingrese la calificacion %d: ",x+1);
         scanf("%f",&calif[a]);
        
         promedio+=calif[a];
-    }
+    } 
     
     printf("El promedio es %.2f",promedio/n);
     return (EXIT_SUCCESS);

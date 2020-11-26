@@ -5,7 +5,7 @@ int main(int argc, char** argv) {
     
    int n=0,mayor=0,x=0,menor;
     int arreglo[x];
-     
+      
     printf("Cuantos valores son: ");
     scanf("%d",&n);
     
