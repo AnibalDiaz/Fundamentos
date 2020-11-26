@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o
+	${OBJECTDIR}/ordenamiento\ burbuja.o
 
 
 # C Compiler Flags
@@ -62,11 +62,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_1cm2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_1cm2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-.NO_PARALLEL:${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o
-${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o: ordenamiento\ burbuja\ mejorado.c
+.NO_PARALLEL:${OBJECTDIR}/ordenamiento\ burbuja.o
+${OBJECTDIR}/ordenamiento\ burbuja.o: ordenamiento\ burbuja.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o ordenamiento\ burbuja\ mejorado.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ordenamiento\ burbuja.o ordenamiento\ burbuja.c
 
 # Subprojects
 .build-subprojects:

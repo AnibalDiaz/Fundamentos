@@ -58,7 +58,7 @@
           <stripSymbols>false</stripSymbols>
         </cTool>
       </item>
-      <item path="ordenamiento burbuja mejorado.c" ex="false" tool="0" flavor2="0">
+      <item path="ordenamiento burbuja.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">

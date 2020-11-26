@@ -1,14 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char** argv) {
-    int num[]={3,1,5};
-    int i=0,j=0,x=0;
+int main(int argc, char** argv)  {
+   
+    int j=0,x=0,n,a;
     int orden=1;
+    int num[]={3,5,1};
     
-    for(i;i<3 && orden==1;i++){
+    for(a;<3 && orden==1;a++){
+       
         orden=0;
-        for(j;j<3;j++){
+         printf("ingrese el valor %d: ",a);
+        scanf("%d",&num[a]);
+        for(j;j<n;j++){
             if(num[j]>num[j+1]){
                 orden=1;
                 x=num[j];
@@ -17,8 +21,8 @@ int main(int argc, char** argv) {
             }
         }
     }
-    for(i=0;i<3;i++){
-        printf("%d,",num[i]);
+    for(a=0;a<3;a++){
+        printf("%d,",num[a]);
     }
     
 
