@@ -2,8 +2,6 @@
 #include <stdlib.h>
 
 int main(int argc, char** argv) {
-    
-    int main(int argc, char** argv) {
     int a=0,j=0,x=0,n=0;
     int num[a];
     

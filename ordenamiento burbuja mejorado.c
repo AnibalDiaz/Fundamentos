@@ -29,11 +29,7 @@ int main(int argc, char** argv)  {
     for(a=0;a<n;a++){
         printf("%d,",num[a]);
     }
-
-
     
-    
-
     return (EXIT_SUCCESS);
 }
 
