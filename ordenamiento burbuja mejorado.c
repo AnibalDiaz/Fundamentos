@@ -3,15 +3,20 @@
 
 int main(int argc, char** argv)  {
    
-    int j=0,x=0,n,a;
+   int main(int argc, char** argv) {
+    int a=0,j=0,x=0,n=0;
+    int num[a];
     int orden=1;
-    int num[]={3,5,1};
     
-    for(a;<3 && orden==1;a++){
-       
-        orden=0;
-         printf("ingrese el valor %d: ",a);
+    printf("Cuantos numeros son: ");
+    scanf("%d",&n);
+    for (a;a<n;a++){
+        printf("Valor %d: ",a+1);
         scanf("%d",&num[a]);
+    }
+    
+    for(a=0;a<n && orden==0;a++){
+        orden=0;
         for(j;j<n;j++){
             if(num[j]>num[j+1]){
                 orden=1;
@@ -21,9 +26,12 @@ int main(int argc, char** argv)  {
             }
         }
     }
-    for(a=0;a<3;a++){
+    for(a=0;a<n;a++){
         printf("%d,",num[a]);
     }
+
+
+    
     
 
     return (EXIT_SUCCESS);
