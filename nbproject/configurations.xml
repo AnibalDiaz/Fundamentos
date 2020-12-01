@@ -12,6 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Funciones.c</itemPath>
       <itemPath>Mayor de 4 numeros.c</itemPath>
       <itemPath>Tablas de multiplicar.c</itemPath>
       <itemPath>arreglo con scanf.c</itemPath>
@@ -48,6 +49,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="Funciones.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="arreglo de 100 elementos.c" ex="true" tool="0" flavor2="0">
         <cTool>
           <stripSymbols>false</stripSymbols>
@@ -57,8 +60,6 @@
         <cTool>
           <stripSymbols>false</stripSymbols>
         </cTool>
-      </item>
-      <item path="arreglo promedio.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -81,6 +82,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Funciones.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="Mayor de 4 numeros.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Tablas de multiplicar.c" ex="false" tool="0" flavor2="0">
