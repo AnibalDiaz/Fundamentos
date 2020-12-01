@@ -13,7 +13,7 @@ int main(int argc, char** argv) {
      printf("Redondeo al entero mas pequeño.\n %.2f\n",ceil(9.2));
      printf("Redondeo al entero mas grande.\n %.2f\n",floor(9.2));
      printf("Potencia.\n %.2f\n",pow(2,7));
-     printf("Residuo con un nuenro flotante.\n %.2f\n",fmod(13.657,2.333));
+     printf("Residuo con un numero flotante.\n %.2f\n",fmod(13.657,2.333));
      printf("Seno.\n %.2f\n",sin(0));
      printf("Coseno.\n %.2f\n",cos(0));
      printf("Tangente.\n %.2f",tan(0));
