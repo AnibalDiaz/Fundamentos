@@ -35,7 +35,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Funciones.o \
 	${OBJECTDIR}/Mayor\ de\ 4\ numeros.o \
 	${OBJECTDIR}/Tablas\ de\ multiplicar.o \
 	${OBJECTDIR}/arreglo\ con\ scanf.o \
@@ -46,6 +45,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/for.o \
 	${OBJECTDIR}/if.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/math.o \
 	${OBJECTDIR}/mayor\ de\ 3\ numeros.o \
 	${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o \
 	${OBJECTDIR}/ordenamiento\ burbuja.o
@@ -74,11 +74,6 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_1cm2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_1cm2 ${OBJECTFILES} ${LDLIBSOPTIONS}
-
-${OBJECTDIR}/Funciones.o: Funciones.c
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Funciones.o Funciones.c
 
 .NO_PARALLEL:${OBJECTDIR}/Mayor\ de\ 4\ numeros.o
 ${OBJECTDIR}/Mayor\ de\ 4\ numeros.o: Mayor\ de\ 4\ numeros.c
@@ -135,6 +130,11 @@ ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+
+${OBJECTDIR}/math.o: math.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/math.o math.c
 
 .NO_PARALLEL:${OBJECTDIR}/mayor\ de\ 3\ numeros.o
 ${OBJECTDIR}/mayor\ de\ 3\ numeros.o: mayor\ de\ 3\ numeros.c

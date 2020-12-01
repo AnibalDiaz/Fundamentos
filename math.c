@@ -4,7 +4,6 @@
 
 int main(int argc, char** argv) {
     
-    /*Funciones de la libreia math*/
      printf("Raiz cuadrada. \n %.2f\n",sqrt(900.0));
      printf("Exponencial.\n %.2f\n",exp(1));
      printf("Logaritmo natural.\n %.2f\n",log(2.718282));
