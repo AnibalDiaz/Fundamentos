@@ -26,6 +26,7 @@
       <itemPath>mayor de 3 numeros.c</itemPath>
       <itemPath>ordenamiento burbuja mejorado.c</itemPath>
       <itemPath>ordenamiento burbuja.c</itemPath>
+      <itemPath>temperatura.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -59,7 +60,7 @@
           <stripSymbols>false</stripSymbols>
         </cTool>
       </item>
-      <item path="math.c" ex="false" tool="0" flavor2="0">
+      <item path="temperatura.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -109,6 +110,8 @@
       <item path="ordenamiento burbuja mejorado.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="ordenamiento burbuja.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="temperatura.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>

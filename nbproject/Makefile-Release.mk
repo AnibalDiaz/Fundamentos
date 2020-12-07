@@ -48,7 +48,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/math.o \
 	${OBJECTDIR}/mayor\ de\ 3\ numeros.o \
 	${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o \
-	${OBJECTDIR}/ordenamiento\ burbuja.o
+	${OBJECTDIR}/ordenamiento\ burbuja.o \
+	${OBJECTDIR}/temperatura.o
 
 
 # C Compiler Flags
@@ -153,6 +154,11 @@ ${OBJECTDIR}/ordenamiento\ burbuja.o: ordenamiento\ burbuja.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ordenamiento\ burbuja.o ordenamiento\ burbuja.c
+
+${OBJECTDIR}/temperatura.o: temperatura.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/temperatura.o temperatura.c
 
 # Subprojects
 .build-subprojects:
