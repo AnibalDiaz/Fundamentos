@@ -1,121 +1,164 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float CaF(float);
-float FaC(float);
-float CaK(float);
-float FaK(float);
-float KaF(float);
-float KaC(float);
+void CaF();
+void FaC();
+void CaK();
+void FaK();
+void KaF();
+void KaC();
+void coversion(int);
 
 int main(int argc, char** argv) {
     
-    int x;
+    int opcion;
     
     do{
+       int opcion=0;
+       
+       system("cmd /c cls");
        printf("1- C a F.\n");
        printf("2- F a C.\n");
        printf("3- C a K.\n");
        printf("4- F a k.\n");
        printf("5- K a F.\n");
        printf("6- K a C.\n");
-       printf("7- Salir");
+       printf("7- Salir\n");
        
        printf("¿Que conversion quiere hacer?: ");
-       scanf("%d",&x);
-       system("cls");
-    }while(x==7);
+       scanf("%d",&opcion);
+       
+       conversion(opcion);
+       
+    }while(opcion != 7);
     
     return (EXIT_SUCCESS);
 }
 
-void CaF (float C){
+void conversion(int opcion){
     
-    int x;
-    float F;
-    
-    if(x==1){
-        printf("Ingrese la temperatura: ");
-        scanf("%f",&C);
-    
-        F = (C*1.8) + 32;
-        
-        printf("La temperatura es %.2f °F",F);
+    switch(opcion){
+        case 1:{
+            CaF();
+            system("cmd /c cls");
+            break;
+        }
+        case 2:{
+            FaC();
+            system("cmd /c cls");
+            break;
+        }
+        case 3:{
+            CaK();
+            system("cmd /c cls");
+            break;
+        }
+        case 4:{
+            FaK();
+            system("cmd /c cls");
+            break;
+        }
+        case 5:{
+            KaF();
+            system("cmd /c cls");
+            break;
+        }
+        case 6:{
+            KaC();
+            system("cmd /c cls");
+            break;
+        }
+        case 7:{
+            printf("Salir\n");
+            break;
+        }
+        default:{
+            printf("Caso defecto\n");
+        }
     }
 }
 
-void FaC (float F){
+void CaF(){
+
+    float F,C=0;
     
-    int x;
-    float C;
+    printf("\nIngrese la temperatura: ");
+    scanf("%f",&C);
     
-    if(x==2){
-       printf("Ingrese la temperatura: ");
-       scanf("%f",&F);
-       
-       C = (F-32)/18;
-       
-       printf("La temperatura es %.2f °C",C);
-    }
+    F = (C*1.8) + 32;
+    
+    printf("\nLa temperatura es %.2f °F",F);
+
 }
 
-void  CaK (float K){
+
+void FaC(){
+
+    float C,F=0;
     
-    int x;
-    float C;
-    
-    if(x==3){
-       printf("Ingrese la temperatura: ");
-       scanf("%f",&C);
+    printf("\nIngrese la temperatura: ");
+    scanf("%f",&F);
        
-       K = C + 273.15; 
-       printf("La temperatura es %.2f °F",K); 
-    }
+    C = (F-32)/18;
+       
+    printf("\nLa temperatura es %.2f °C",C);
+ 
+
 }
 
-void FaK (float K){
+void  CaK(){
     
-    int x;
-    float F;
+    float C=0,K;
     
-    if(x==4){
-       printf("Ingrese la temperatura: ");
-       scanf("%f",&F);
+    printf("\nIngrese la temperatura: ");
+    scanf("%f",&C);
        
-       K = ((5/9)*(F-32)) + 273.15;
-       
-       printf("La temperatura es %.2f °K",K); 
-    }
+    K = C + 273.15; 
+    
+    printf("\nLa temperatura es %.2f °F",K); 
+
+
 }
 
-void KaF (float K){
+void FaK(){
+
+    float F=0,K;
     
-    int x;
-    float F;
-    
-    if(x==5){
-        printf("Ingrese la temperatura: ");
-        scanf("%f",&K);
-        
-        F = (1.8*(K-273.15)) + 32;
-        
-        printf("La temperatura es %.2f °F",F); 
-    }
+    printf("\nIngrese la temperatura: ");
+    scanf("%f",&F);
+       
+    K = ((5/9)*(F-32)) + 273.15;
+       
+    printf("\nLa temperatura es %.2f °K",K); 
+
 }
 
-void KaC (float C){
+void KaF(){
     
-    int x;
-    float K;
+    float F,K=0;
     
-    if(x==6){
-        printf("Ingrese la temperatura: ");
-        scanf("%d",&K);
+    printf("\nIngrese la temperatura: ");
+    scanf("%f",&K);
         
-        C = K-273.15;
+    F = (1.8*(K-273.15)) + 32;
         
-        printf("La temperatura es %.2f °C",C); 
-    }
+    printf("\nLa temperatura es %.2f °F",F); 
+  
+    
+}
+
+void KaC(){
+    
+    float K=0,C;
+    
+    printf("\nIngrese la temperatura: ");
+    scanf("%d",&K);
+        
+    C = K-273.15;
+        
+    printf("\nLa temperatura es %.2f °C",C); 
+  
+    
 }
 
 
