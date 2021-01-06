@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char** argv) {
+    int x=22,y=16;
+    
+    if(x<y){
+        printf("El mayor es y",y);
+    }
+    else{
+        printf("El mayor es x",x);
+    }
+
+    return (EXIT_SUCCESS);
+}
+

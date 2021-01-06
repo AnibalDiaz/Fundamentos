@@ -41,6 +41,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/arreglo\ de\ 100\ elementos.o \
 	${OBJECTDIR}/arreglo\ min\ y\ max.o \
 	${OBJECTDIR}/arreglo\ promedio.o \
+	${OBJECTDIR}/es.o \
+	${OBJECTDIR}/es.o \
+	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/fibonacci.o \
 	${OBJECTDIR}/for.o \
 	${OBJECTDIR}/if.o \
@@ -111,6 +114,21 @@ ${OBJECTDIR}/arreglo\ promedio.o: arreglo\ promedio.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglo\ promedio.o arreglo\ promedio.c
+
+${OBJECTDIR}/es.o: es.\ desicion\ 2
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/es.o es.\ desicion\ 2
+
+${OBJECTDIR}/es.o: es.\ desiciones\ 1
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/es.o es.\ desiciones\ 1
+
+${OBJECTDIR}/es.o: es.\ desiciones\ 3
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/es.o es.\ desiciones\ 3
 
 ${OBJECTDIR}/fibonacci.o: fibonacci.c
 	${MKDIR} -p ${OBJECTDIR}

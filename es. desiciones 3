@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char** argv) {
+    int x,y;
+    
+    printf("Ingrese el primer valor: ");
+    scanf("%d",&x);
+    printf("Ingrese el segundo valor: ");
+    scanf("%d",&y);
+    
+    if(y<x){
+        printf("El valor mayor es %d",x);
+    }
+    else{
+        printf("El valor mayor es %d",y);
+    }
+
+    return (EXIT_SUCCESS);
+}
+

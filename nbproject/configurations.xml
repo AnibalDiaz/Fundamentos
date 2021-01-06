@@ -18,6 +18,9 @@
       <itemPath>arreglo de 100 elementos.c</itemPath>
       <itemPath>arreglo min y max.c</itemPath>
       <itemPath>arreglo promedio.c</itemPath>
+      <itemPath>es. desicion 2</itemPath>
+      <itemPath>es. desiciones 1</itemPath>
+      <itemPath>es. desiciones 3</itemPath>
       <itemPath>fibonacci.c</itemPath>
       <itemPath>for.c</itemPath>
       <itemPath>if.c</itemPath>
@@ -60,7 +63,10 @@
           <stripSymbols>false</stripSymbols>
         </cTool>
       </item>
-      <item path="temperatura.c" ex="false" tool="0" flavor2="0">
+      <item path="temperatura.c" ex="true" tool="0" flavor2="0">
+        <cTool>
+          <stripSymbols>false</stripSymbols>
+        </cTool>
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -94,6 +100,12 @@
       <item path="arreglo min y max.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="arreglo promedio.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="es. desicion 2" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="es. desiciones 1" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="es. desiciones 3" ex="false" tool="0" flavor2="0">
       </item>
       <item path="fibonacci.c" ex="false" tool="0" flavor2="0">
       </item>
