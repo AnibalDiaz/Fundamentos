@@ -44,6 +44,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/es.o \
+	${OBJECTDIR}/es.o \
+	${OBJECTDIR}/es.o \
+	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/fibonacci.o \
 	${OBJECTDIR}/for.o \
 	${OBJECTDIR}/if.o \
@@ -115,10 +118,25 @@ ${OBJECTDIR}/arreglo\ promedio.o: arreglo\ promedio.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglo\ promedio.o arreglo\ promedio.c
 
+${OBJECTDIR}/es.o: es.\ almacenamiento\ 2
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/es.o es.\ almacenamiento\ 2
+
+${OBJECTDIR}/es.o: es.\ almacenamineto\ 1
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/es.o es.\ almacenamineto\ 1
+
 ${OBJECTDIR}/es.o: es.\ desicion\ 2
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/es.o es.\ desicion\ 2
+
+${OBJECTDIR}/es.o: es.\ desicion\ 4
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/es.o es.\ desicion\ 4
 
 ${OBJECTDIR}/es.o: es.\ desiciones\ 1
 	${MKDIR} -p ${OBJECTDIR}

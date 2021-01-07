@@ -18,7 +18,10 @@
       <itemPath>arreglo de 100 elementos.c</itemPath>
       <itemPath>arreglo min y max.c</itemPath>
       <itemPath>arreglo promedio.c</itemPath>
+      <itemPath>es. almacenamiento 2</itemPath>
+      <itemPath>es. almacenamineto 1</itemPath>
       <itemPath>es. desicion 2</itemPath>
+      <itemPath>es. desicion 4</itemPath>
       <itemPath>es. desiciones 1</itemPath>
       <itemPath>es. desiciones 3</itemPath>
       <itemPath>fibonacci.c</itemPath>
@@ -101,7 +104,13 @@
       </item>
       <item path="arreglo promedio.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="es. almacenamiento 2" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="es. almacenamineto 1" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="es. desicion 2" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="es. desicion 4" ex="false" tool="0" flavor2="0">
       </item>
       <item path="es. desiciones 1" ex="false" tool="0" flavor2="0">
       </item>

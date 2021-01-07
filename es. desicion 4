@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char** argv) {
+    int edad;
+    
+    printf("Ingrese su edad: ");
+    scanf("%d",&edad);
+    
+    if(edad<12){
+        printf("Es un niñ@");
+       
+    }
+    else if(edad>=12 && edad<18){
+        printf("Es un joven");
+    }
+    else if(edad>=18 && edad<60){
+        printf("Es un adulto joven");
+    }
+    else if(edad>=60){
+        printf("Es un adulto mayor");
+    }
+    return (EXIT_SUCCESS);
+}
+

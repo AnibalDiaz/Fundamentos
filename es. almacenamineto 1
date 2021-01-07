@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char** argv) {
+    int x=0,i=0,promedio=0,n=0;
+    float calif[x];
+    
+    printf("Cunatos alumnos son");
+    scanf("%d",&n);
+     
+     for(i;i<n;i++){
+         printf("Clificacion %d:",i+1);
+         scanf("%f",&calif[x]);
+         
+         promedio+=calif[x];
+     }
+     
+     printf("El promedio es %d",promedio/n);
+
+    return (EXIT_SUCCESS);
+}
+
