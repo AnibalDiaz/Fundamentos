@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void apuntador();
+void arreglo();
+void programa(int);
+
+ int main(int argc, char** argv) {
+    int opcion;
+    
+    do{
+       
+    int opcion=0;
+    
+    printf("1- Apuntador\n");
+    printf("2- Arreglo\n");
+    printf("3- Salir\n");
+    printf("Que tipo de programa quieres ejecutar? ");
+    scanf("%d",&opcion);
+    
+    programa(opcion);
+    
+    }while(opcion != 3);
+        
+    return (EXIT_SUCCESS);
+}
+void programa(int opcion){
+    
+    switch(opcion){
+        case 1:{
+            apuntador();
+            
+            break;
+        }
+        case 2:{
+            arreglo();
+        
+            break;
+        }
+    }  
+} 
+
+void apuntador(){
+    int x;
+    printf("Dale un valor a x");
+    scanf("%d",&x);
+    
+    printf("La direccion de memoria es %p",&x);
+}
+
+void arreglo(){
+    int i=0,x=0,j=0;
+    int arreglo[j];
+    
+    printf("Cuantas iteraciones quieres que tenga el arreglo: ");
+    scanf("%d",&i);
+    
+    for(x;x<i;i++){
+        printf("Agrege el valor  del iteracion %d: ",x+1);
+        scanf("%d",arreglo[j]);
+        
+        printf("Iteracion %d = %d",x,arreglo[j]);
+    }
+}

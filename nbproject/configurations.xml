@@ -23,6 +23,7 @@
       <itemPath>arreglo promedio.c</itemPath>
       <itemPath>es. almacenamiento 2</itemPath>
       <itemPath>es. almacenamineto 1</itemPath>
+      <itemPath>es. codigo</itemPath>
       <itemPath>es. codigo 1</itemPath>
       <itemPath>es. desicion 2</itemPath>
       <itemPath>es. desicion 4</itemPath>
@@ -71,7 +72,7 @@
           <stripSymbols>false</stripSymbols>
         </cTool>
       </item>
-      <item path="es. codigo 1" ex="false" tool="0" flavor2="0">
+      <item path="es. codigo" ex="false" tool="0" flavor2="0">
       </item>
       <item path="temperatura.c" ex="true" tool="0" flavor2="0">
         <cTool>
@@ -120,6 +121,8 @@
       <item path="es. almacenamiento 2" ex="false" tool="0" flavor2="0">
       </item>
       <item path="es. almacenamineto 1" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="es. codigo" ex="false" tool="0" flavor2="0">
       </item>
       <item path="es. codigo 1" ex="false" tool="0" flavor2="0">
       </item>

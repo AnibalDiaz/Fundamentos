@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+float perimetroCuadrado(float);
+float areaCuadrado(float,float);
 
 int main(int argc, char** argv) {
-    float perimetroCuadrado(float);
-     float areaCuadrado(float,float);
-     
+   
      float base,altura,lado;
      
      printf("Dame la base del cuadrado: ");

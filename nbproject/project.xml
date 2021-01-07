@@ -4,7 +4,7 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>Fundamentos 1CM2</name>
-            <c-extensions> almacenamiento 2, almacenamineto 1, codigo 1, desicion 2, desicion 4, desiciones 1, desiciones 3,almacenamiento 3,c</c-extensions>
+            <c-extensions> almacenamiento 2, almacenamineto 1, codigo, codigo 1, desicion 2, desicion 4, desiciones 1, desiciones 3,almacenamiento 3,c</c-extensions>
             <cpp-extensions/>
             <header-extensions/>
             <sourceEncoding>UTF-8</sourceEncoding>
