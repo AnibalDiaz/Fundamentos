@@ -15,6 +15,7 @@
       <itemPath>Mayor de 4 numeros.c</itemPath>
       <itemPath>Tablas de multiplicar.c</itemPath>
       <itemPath>apuntador 1.c</itemPath>
+      <itemPath>apuntador 3.c</itemPath>
       <itemPath>apuntador con arreglo.c</itemPath>
       <itemPath>arreglo con scanf.c</itemPath>
       <itemPath>arreglo de 100 elementos.c</itemPath>
@@ -22,6 +23,7 @@
       <itemPath>arreglo promedio.c</itemPath>
       <itemPath>es. almacenamiento 2</itemPath>
       <itemPath>es. almacenamineto 1</itemPath>
+      <itemPath>es. codigo 1</itemPath>
       <itemPath>es. desicion 2</itemPath>
       <itemPath>es. desicion 4</itemPath>
       <itemPath>es. desiciones 1</itemPath>
@@ -59,8 +61,6 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="apuntador con arreglo.c" ex="false" tool="0" flavor2="0">
-      </item>
       <item path="arreglo de 100 elementos.c" ex="true" tool="0" flavor2="0">
         <cTool>
           <stripSymbols>false</stripSymbols>
@@ -70,6 +70,8 @@
         <cTool>
           <stripSymbols>false</stripSymbols>
         </cTool>
+      </item>
+      <item path="es. codigo 1" ex="false" tool="0" flavor2="0">
       </item>
       <item path="temperatura.c" ex="true" tool="0" flavor2="0">
         <cTool>
@@ -103,6 +105,8 @@
       </item>
       <item path="apuntador 1.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="apuntador 3.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="apuntador con arreglo.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="arreglo con scanf.c" ex="false" tool="0" flavor2="0">
@@ -116,6 +120,8 @@
       <item path="es. almacenamiento 2" ex="false" tool="0" flavor2="0">
       </item>
       <item path="es. almacenamineto 1" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="es. codigo 1" ex="false" tool="0" flavor2="0">
       </item>
       <item path="es. desicion 2" ex="false" tool="0" flavor2="0">
       </item>

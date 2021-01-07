@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char** argv) {
+    float perimetroCuadrado(float);
+     float areaCuadrado(float,float);
+     
+     float base,altura,lado;
+     
+     printf("Dame la base del cuadrado: ");
+     scanf("%f",&base);
+     printf("Dame la altura del cuadrado: ");
+     scanf("%f",&altura);
+     printf("Dame un lado del cuadrado: ");
+     scanf("%f",&lado);
+
+     printf("El area es %.2f\n",areaCuadrado(base,altura));
+     printf("El perimetro es %.2f",perimetroCuadrado(lado));
+     
+     
+    return (EXIT_SUCCESS);
+}
+float areaCuadrado(float base,float altura){
+    
+    float area=base*altura;
+    
+    return area;
+} 
+
+float perimetroCuadrado(float lado){
+    
+    float perimetro=4*lado;
+    
+    return perimetro;
+}
+
+    return (EXIT_SUCCESS);
+}
+

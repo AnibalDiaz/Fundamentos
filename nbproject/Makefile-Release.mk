@@ -38,11 +38,13 @@ OBJECTFILES= \
 	${OBJECTDIR}/Mayor\ de\ 4\ numeros.o \
 	${OBJECTDIR}/Tablas\ de\ multiplicar.o \
 	${OBJECTDIR}/apuntador\ 1.o \
+	${OBJECTDIR}/apuntador\ 3.o \
 	${OBJECTDIR}/apuntador\ con\ arreglo.o \
 	${OBJECTDIR}/arreglo\ con\ scanf.o \
 	${OBJECTDIR}/arreglo\ de\ 100\ elementos.o \
 	${OBJECTDIR}/arreglo\ min\ y\ max.o \
 	${OBJECTDIR}/arreglo\ promedio.o \
+	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/es.o \
@@ -103,6 +105,12 @@ ${OBJECTDIR}/apuntador\ 1.o: apuntador\ 1.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/apuntador\ 1.o apuntador\ 1.c
 
+.NO_PARALLEL:${OBJECTDIR}/apuntador\ 3.o
+${OBJECTDIR}/apuntador\ 3.o: apuntador\ 3.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/apuntador\ 3.o apuntador\ 3.c
+
 .NO_PARALLEL:${OBJECTDIR}/apuntador\ con\ arreglo.o
 ${OBJECTDIR}/apuntador\ con\ arreglo.o: apuntador\ con\ arreglo.c
 	${MKDIR} -p ${OBJECTDIR}
@@ -142,6 +150,11 @@ ${OBJECTDIR}/es.o: es.\ almacenamineto\ 1
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/es.o es.\ almacenamineto\ 1
+
+${OBJECTDIR}/es.o: es.\ codigo\ 1
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/es.o es.\ codigo\ 1
 
 ${OBJECTDIR}/es.o: es.\ desicion\ 2
 	${MKDIR} -p ${OBJECTDIR}
