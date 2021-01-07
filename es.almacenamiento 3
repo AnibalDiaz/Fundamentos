@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char** argv) {
+    int suma=0,x=0;
+    float arreglo[]={45,3,22,1};
+    
+    for(x;x<4;x++){
+        suma+=arreglo[x];
+    }
+    printf("La suma del arreglo es %d",suma);
+    return (EXIT_SUCCESS);
+}
+

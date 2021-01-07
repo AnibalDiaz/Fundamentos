@@ -37,10 +37,13 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Mayor\ de\ 4\ numeros.o \
 	${OBJECTDIR}/Tablas\ de\ multiplicar.o \
+	${OBJECTDIR}/apuntador\ 1.o \
+	${OBJECTDIR}/apuntador\ con\ arreglo.o \
 	${OBJECTDIR}/arreglo\ con\ scanf.o \
 	${OBJECTDIR}/arreglo\ de\ 100\ elementos.o \
 	${OBJECTDIR}/arreglo\ min\ y\ max.o \
 	${OBJECTDIR}/arreglo\ promedio.o \
+	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/es.o \
@@ -93,6 +96,18 @@ ${OBJECTDIR}/Tablas\ de\ multiplicar.o: Tablas\ de\ multiplicar.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas\ de\ multiplicar.o Tablas\ de\ multiplicar.c
+
+.NO_PARALLEL:${OBJECTDIR}/apuntador\ 1.o
+${OBJECTDIR}/apuntador\ 1.o: apuntador\ 1.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/apuntador\ 1.o apuntador\ 1.c
+
+.NO_PARALLEL:${OBJECTDIR}/apuntador\ con\ arreglo.o
+${OBJECTDIR}/apuntador\ con\ arreglo.o: apuntador\ con\ arreglo.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/apuntador\ con\ arreglo.o apuntador\ con\ arreglo.c
 
 .NO_PARALLEL:${OBJECTDIR}/arreglo\ con\ scanf.o
 ${OBJECTDIR}/arreglo\ con\ scanf.o: arreglo\ con\ scanf.c
@@ -147,6 +162,11 @@ ${OBJECTDIR}/es.o: es.\ desiciones\ 3
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/es.o es.\ desiciones\ 3
+
+${OBJECTDIR}/es.o: es.almacenamiento\ 3
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/es.o es.almacenamiento\ 3
 
 ${OBJECTDIR}/fibonacci.o: fibonacci.c
 	${MKDIR} -p ${OBJECTDIR}
