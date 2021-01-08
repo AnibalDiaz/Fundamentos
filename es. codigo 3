@@ -1,0 +1,226 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void enero();
+void febrero();
+void marzo();
+void abril();
+void mayo();
+void junio();
+void julio();
+void agosto();
+void septiembre();
+void octubre();
+void noviembre();
+void diciembre();
+void menu(int);
+
+int main(int argc, char** argv) {
+    int opcion;
+    
+    do{
+        int opcion;
+        
+        printf("\n1- Enero.\n");
+        printf("2- Febrero.\n");
+        printf("3- Marzo.\n");
+        printf("4- Abril.\n");
+        printf("5- Mayo.\n");
+        printf("6- Junio.\n");
+        printf("7- Julio.\n");
+        printf("8- Agosto.\n");
+        printf("9- Septiembre.\n");
+        printf("10- Octubre.\n");
+        printf("11- Noviembre.\n");
+        printf("12- Diciembre.\n");
+        printf("13- Salir\n");
+        
+        printf("Elige una opcion: ");
+        scanf("%d",&opcion);
+        
+        menu(opcion);
+             
+    }while(opcion !=13);
+    
+    return (EXIT_SUCCESS);
+}
+void menu(int opcion){
+    switch(opcion){
+        case 1:{
+            enero();
+            
+            
+            break;
+        }
+        case 2:{
+            febrero();
+            
+            
+            break;
+        }
+        case 3:{
+            marzo();
+            
+            
+            break;
+        }
+        case 4:{
+            abril();
+            
+            
+            break;
+        }
+        case 5:{
+            mayo();
+            
+           
+            break;
+        }
+        case 6:{
+            junio();
+            
+           
+            break;
+        }
+        case 7:{
+            julio();
+            
+           
+            break;
+        }
+        case 8:{
+            agosto();
+            
+           
+            break;
+        }
+        case 9:{
+            septiembre();
+            break;
+        }
+        case 10:{
+            octubre();
+            break;           
+        }
+        case 11:{
+            noviembre();
+           
+            break;
+        }
+        case 12:{
+            diciembre();
+            break;
+        }
+        
+    }
+}
+void enero(){
+    int m=0;
+    
+    printf("Enero.\n");
+    
+    for(m;m<31;m++){
+        printf("%d/",m+1);
+    }
+}
+void febrero(){
+    int m=0;
+    
+    printf("Febrero.\n");
+    
+    for(m;m<28;m++){
+        printf("%d/",m+1);
+    }
+}
+void marzo(){
+    int m=0;
+    
+    printf("Marzo.\n");
+    
+    for(m;m<31;m++){
+        printf("%d/",m+1);
+    }
+}
+void abril(){
+    int m=0;
+    
+    printf("Abril.\n");
+    
+    for(m;m<30;m++){
+        printf("%d/",m+1);
+    }
+}
+void mayo(){
+    int m=0;
+    
+    printf("Enero.\n");
+    
+    for(m;m<31;m++){
+        printf("%d/",m+1);
+    }
+}
+void junio(){
+    int m=0;
+    
+    printf("Junio.\n");
+    
+    for(m;m<30;m++){
+        printf("%d/",m+1);
+    }
+}
+void julio(){
+    int m=0;
+    
+    printf("Julio.\n");
+    
+    for(m;m<31;m++){
+        printf("%d/",m+1);
+    }
+}
+void agosto(){
+    int m=0;
+    
+    printf("Agosto.\n");
+    
+    for(m;m<31;m++){
+        printf("%d/",m+1);
+    }
+}
+void septiembre(){
+    int m=0;
+    
+    printf("Septimbre.\n");
+
+    for(m;m<31;m+1){
+        printf("%d",m+1);
+    }
+}
+void octubre(){
+    int m=0;
+    
+    printf("Octubre.\n");
+    
+    for(m;m<30;m++){
+        printf("%d/",m+1);
+    }
+}
+void noviembre(){
+    int m=0;
+    
+    printf("Noviembre.\n");
+    
+    for(m;m<30;m++){
+        printf("%d/",m+1);
+    }
+}
+void diciembre(){
+    int m=0;
+    
+    printf("Diciembre.\n");
+    
+    for(m;m<31;m++){
+        printf("%d/",m+1);
+    }
+}
+
+
