@@ -12,6 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Cadena de char.c</itemPath>
       <itemPath>Mayor de 4 numeros.c</itemPath>
       <itemPath>Tablas de multiplicar.c</itemPath>
       <itemPath>apuntador 1.c</itemPath>
@@ -19,6 +20,7 @@
       <itemPath>apuntador con arreglo.c</itemPath>
       <itemPath>arreglo con scanf.c</itemPath>
       <itemPath>arreglo de 100 elementos.c</itemPath>
+      <itemPath>arreglo de dos dimensiones.c</itemPath>
       <itemPath>arreglo min y max.c</itemPath>
       <itemPath>arreglo promedio.c</itemPath>
       <itemPath>es. almacenamiento 2</itemPath>
@@ -74,8 +76,6 @@
           <stripSymbols>false</stripSymbols>
         </cTool>
       </item>
-      <item path="es. codigo 3" ex="false" tool="0" flavor2="0">
-      </item>
       <item path="temperatura.c" ex="true" tool="0" flavor2="0">
         <cTool>
           <stripSymbols>false</stripSymbols>
@@ -102,6 +102,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Cadena de char.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="Mayor de 4 numeros.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Tablas de multiplicar.c" ex="false" tool="0" flavor2="0">
@@ -115,6 +117,8 @@
       <item path="arreglo con scanf.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="arreglo de 100 elementos.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="arreglo de dos dimensiones.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="arreglo min y max.c" ex="false" tool="0" flavor2="0">
       </item>

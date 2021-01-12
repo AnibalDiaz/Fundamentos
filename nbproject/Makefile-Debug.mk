@@ -34,8 +34,7 @@ include Makefile
 OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
-OBJECTFILES= \
-	${OBJECTDIR}/es.o
+OBJECTFILES=
 
 
 # C Compiler Flags
@@ -61,11 +60,6 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_1cm2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_1cm2 ${OBJECTFILES} ${LDLIBSOPTIONS}
-
-${OBJECTDIR}/es.o: es.\ codigo\ 3
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/es.o es.\ codigo\ 3
 
 # Subprojects
 .build-subprojects:

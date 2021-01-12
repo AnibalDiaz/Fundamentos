@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Cadena\ de\ char.o \
 	${OBJECTDIR}/Mayor\ de\ 4\ numeros.o \
 	${OBJECTDIR}/Tablas\ de\ multiplicar.o \
 	${OBJECTDIR}/apuntador\ 1.o \
@@ -42,6 +43,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/apuntador\ con\ arreglo.o \
 	${OBJECTDIR}/arreglo\ con\ scanf.o \
 	${OBJECTDIR}/arreglo\ de\ 100\ elementos.o \
+	${OBJECTDIR}/arreglo\ de\ dos\ dimensiones.o \
 	${OBJECTDIR}/arreglo\ min\ y\ max.o \
 	${OBJECTDIR}/arreglo\ promedio.o \
 	${OBJECTDIR}/es.o \
@@ -90,6 +92,12 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_1cm2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_1cm2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+.NO_PARALLEL:${OBJECTDIR}/Cadena\ de\ char.o
+${OBJECTDIR}/Cadena\ de\ char.o: Cadena\ de\ char.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Cadena\ de\ char.o Cadena\ de\ char.c
+
 .NO_PARALLEL:${OBJECTDIR}/Mayor\ de\ 4\ numeros.o
 ${OBJECTDIR}/Mayor\ de\ 4\ numeros.o: Mayor\ de\ 4\ numeros.c
 	${MKDIR} -p ${OBJECTDIR}
@@ -131,6 +139,12 @@ ${OBJECTDIR}/arreglo\ de\ 100\ elementos.o: arreglo\ de\ 100\ elementos.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglo\ de\ 100\ elementos.o arreglo\ de\ 100\ elementos.c
+
+.NO_PARALLEL:${OBJECTDIR}/arreglo\ de\ dos\ dimensiones.o
+${OBJECTDIR}/arreglo\ de\ dos\ dimensiones.o: arreglo\ de\ dos\ dimensiones.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglo\ de\ dos\ dimensiones.o arreglo\ de\ dos\ dimensiones.c
 
 .NO_PARALLEL:${OBJECTDIR}/arreglo\ min\ y\ max.o
 ${OBJECTDIR}/arreglo\ min\ y\ max.o: arreglo\ min\ y\ max.c
