@@ -23,6 +23,7 @@
       <itemPath>arreglo de dos dimensiones.c</itemPath>
       <itemPath>arreglo min y max.c</itemPath>
       <itemPath>arreglo promedio.c</itemPath>
+      <itemPath>cadena de cont de char.c</itemPath>
       <itemPath>es. almacenamiento 2</itemPath>
       <itemPath>es. almacenamineto 1</itemPath>
       <itemPath>es. codigo</itemPath>
@@ -76,6 +77,8 @@
           <stripSymbols>false</stripSymbols>
         </cTool>
       </item>
+      <item path="cadena de cont de char.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="temperatura.c" ex="true" tool="0" flavor2="0">
         <cTool>
           <stripSymbols>false</stripSymbols>
@@ -123,6 +126,8 @@
       <item path="arreglo min y max.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="arreglo promedio.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="cadena de cont de char.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="es. almacenamiento 2" ex="false" tool="0" flavor2="0">
       </item>

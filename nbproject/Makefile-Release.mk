@@ -46,6 +46,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/arreglo\ de\ dos\ dimensiones.o \
 	${OBJECTDIR}/arreglo\ min\ y\ max.o \
 	${OBJECTDIR}/arreglo\ promedio.o \
+	${OBJECTDIR}/cadena\ de\ cont\ de\ char.o \
 	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/es.o \
@@ -157,6 +158,12 @@ ${OBJECTDIR}/arreglo\ promedio.o: arreglo\ promedio.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglo\ promedio.o arreglo\ promedio.c
+
+.NO_PARALLEL:${OBJECTDIR}/cadena\ de\ cont\ de\ char.o
+${OBJECTDIR}/cadena\ de\ cont\ de\ char.o: cadena\ de\ cont\ de\ char.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/cadena\ de\ cont\ de\ char.o cadena\ de\ cont\ de\ char.c
 
 ${OBJECTDIR}/es.o: es.\ almacenamiento\ 2
 	${MKDIR} -p ${OBJECTDIR}
