@@ -6,7 +6,7 @@
             <name>Fundamentos 1CM2</name>
             <c-extensions> almacenamiento 2, almacenamineto 1, codigo, codigo 1, codigo 2, codigo 3, desicion 2, desicion 4, desiciones 1, desiciones 3,almacenamiento 3,c</c-extensions>
             <cpp-extensions/>
-            <header-extensions/>
+            <header-extensions>h</header-extensions>
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList/>

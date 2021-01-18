@@ -64,6 +64,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/math.o \
 	${OBJECTDIR}/mayor\ de\ 3\ numeros.o \
+	${OBJECTDIR}/newmain.o \
 	${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o \
 	${OBJECTDIR}/ordenamiento\ burbuja.o \
 	${OBJECTDIR}/temperatura.o
@@ -250,6 +251,11 @@ ${OBJECTDIR}/mayor\ de\ 3\ numeros.o: mayor\ de\ 3\ numeros.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/mayor\ de\ 3\ numeros.o mayor\ de\ 3\ numeros.c
+
+${OBJECTDIR}/newmain.o: newmain.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/newmain.o newmain.c
 
 .NO_PARALLEL:${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o
 ${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o: ordenamiento\ burbuja\ mejorado.c

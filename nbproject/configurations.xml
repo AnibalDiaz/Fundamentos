@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>funciones.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -41,6 +42,7 @@
       <itemPath>main.c</itemPath>
       <itemPath>math.c</itemPath>
       <itemPath>mayor de 3 numeros.c</itemPath>
+      <itemPath>newmain.c</itemPath>
       <itemPath>ordenamiento burbuja mejorado.c</itemPath>
       <itemPath>ordenamiento burbuja.c</itemPath>
       <itemPath>temperatura.c</itemPath>
@@ -77,7 +79,9 @@
           <stripSymbols>false</stripSymbols>
         </cTool>
       </item>
-      <item path="cadena de cont de char.c" ex="false" tool="0" flavor2="0">
+      <item path="funciones.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="newmain.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="temperatura.c" ex="true" tool="0" flavor2="0">
         <cTool>
@@ -155,6 +159,8 @@
       </item>
       <item path="for.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="funciones.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="if.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
@@ -162,6 +168,8 @@
       <item path="math.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="mayor de 3 numeros.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="newmain.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="ordenamiento burbuja mejorado.c" ex="false" tool="0" flavor2="0">
       </item>
