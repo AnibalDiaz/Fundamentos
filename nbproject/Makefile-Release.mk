@@ -59,6 +59,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/fibonacci.o \
+	${OBJECTDIR}/ficheros.o \
 	${OBJECTDIR}/for.o \
 	${OBJECTDIR}/if.o \
 	${OBJECTDIR}/main.o \
@@ -225,6 +226,11 @@ ${OBJECTDIR}/fibonacci.o: fibonacci.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/fibonacci.o fibonacci.c
+
+${OBJECTDIR}/ficheros.o: ficheros.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ficheros.o ficheros.c
 
 ${OBJECTDIR}/for.o: for.c
 	${MKDIR} -p ${OBJECTDIR}
