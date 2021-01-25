@@ -39,6 +39,7 @@
       <itemPath>factorial.c</itemPath>
       <itemPath>fibonacci.c</itemPath>
       <itemPath>ficheros.c</itemPath>
+      <itemPath>fobonacci recursividad.c</itemPath>
       <itemPath>for.c</itemPath>
       <itemPath>if.c</itemPath>
       <itemPath>main.c</itemPath>
@@ -81,7 +82,7 @@
           <stripSymbols>false</stripSymbols>
         </cTool>
       </item>
-      <item path="factorial.c" ex="false" tool="0" flavor2="0">
+      <item path="fobonacci recursividad.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="funciones.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -162,6 +163,8 @@
       <item path="fibonacci.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="ficheros.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="fobonacci recursividad.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="for.c" ex="false" tool="0" flavor2="0">
       </item>

@@ -61,6 +61,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/factorial.o \
 	${OBJECTDIR}/fibonacci.o \
 	${OBJECTDIR}/ficheros.o \
+	${OBJECTDIR}/fobonacci\ recursividad.o \
 	${OBJECTDIR}/for.o \
 	${OBJECTDIR}/if.o \
 	${OBJECTDIR}/main.o \
@@ -237,6 +238,12 @@ ${OBJECTDIR}/ficheros.o: ficheros.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ficheros.o ficheros.c
+
+.NO_PARALLEL:${OBJECTDIR}/fobonacci\ recursividad.o
+${OBJECTDIR}/fobonacci\ recursividad.o: fobonacci\ recursividad.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/fobonacci\ recursividad.o fobonacci\ recursividad.c
 
 ${OBJECTDIR}/for.o: for.c
 	${MKDIR} -p ${OBJECTDIR}
