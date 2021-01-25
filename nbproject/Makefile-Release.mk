@@ -70,7 +70,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/newmain.o \
 	${OBJECTDIR}/ordenamiento\ burbuja\ mejorado.o \
 	${OBJECTDIR}/ordenamiento\ burbuja.o \
-	${OBJECTDIR}/temperatura.o
+	${OBJECTDIR}/temperatura.o \
+	${OBJECTDIR}/torres\ de\ hanoi.o
 
 
 # C Compiler Flags
@@ -292,6 +293,12 @@ ${OBJECTDIR}/temperatura.o: temperatura.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/temperatura.o temperatura.c
+
+.NO_PARALLEL:${OBJECTDIR}/torres\ de\ hanoi.o
+${OBJECTDIR}/torres\ de\ hanoi.o: torres\ de\ hanoi.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/torres\ de\ hanoi.o torres\ de\ hanoi.c
 
 # Subprojects
 .build-subprojects:
