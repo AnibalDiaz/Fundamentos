@@ -2,22 +2,21 @@
 #include <stdlib.h>
 
 int factorial(int);
-
 int main(int argc, char** argv) {
     int numero;
     
-    printf("Ingresa un numero: ");
+    printf("Ingrese un numero: ");
     scanf("%d",&numero);
-    printf("Su factorial es %d.",factorial);
+    printf("El factorial de %d es %d",numero,factorial(numero));
 
     return (EXIT_SUCCESS);
 }
-int factorila(int numero){
+int factorial(int numero){
     if(numero==0){
-        numero = 1;
+        numero=1;
     }
     else{
-        numero = numero * factorial(numero-1);
+        numero=numero*factorial(numero-1);
     }
     return numero;
 }
