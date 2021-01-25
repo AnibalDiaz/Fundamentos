@@ -58,6 +58,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/es.o \
 	${OBJECTDIR}/es.o \
+	${OBJECTDIR}/factorial.o \
 	${OBJECTDIR}/fibonacci.o \
 	${OBJECTDIR}/ficheros.o \
 	${OBJECTDIR}/for.o \
@@ -221,6 +222,11 @@ ${OBJECTDIR}/es.o: es.almacenamiento\ 3
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/es.o es.almacenamiento\ 3
+
+${OBJECTDIR}/factorial.o: factorial.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/factorial.o factorial.c
 
 ${OBJECTDIR}/fibonacci.o: fibonacci.c
 	${MKDIR} -p ${OBJECTDIR}
